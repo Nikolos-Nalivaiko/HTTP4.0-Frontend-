@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240710145739">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710145739">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710145739"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710145739"></script>
+    <title>Новий вантаж</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="header__inner container">
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="index.html" class="navbar__menu-link">Головна</a>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Вантажі</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cargos.html" class="navbar__menu-dropdown-link">Біржа вантажів</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-cargo.html" class="navbar__menu-dropdown-link">Додати вантаж</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Транспорт</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cars.html" class="navbar__menu-dropdown-link">Біржа транспорту</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-car.html" class="navbar__menu-dropdown-link">Додати транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="sign-in.html" class="navbar__btn">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="navbar__menu--mobile"></p>
+    </div>
+</header>
+    <main class="main">
+        <section class="select section__new-page container">
+                <h2>Новий вантаж</h2>
+                <p class="section__new-page-description">Вкажіть необхідні дані, визначте умови перевезення та отримайте доступ до широкого спектру транспортних рішень</p>
+
+                <form action="" method="post" class="create__form" id="createCargo">
+
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-cargo-edit"></p>
+                            <div class="input__inner">
+                                <label for="name" class="input__label">Введіть назву товару</label>
+                                <input type="text" name="name" id="name" class="input__input">
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-weight"></p>
+                            <div class="input__inner">
+                                <label for="weight" class="input__label">Введіть вагу товару, кг</label>
+                                <input type="number" name="weight" id="weight" class="input__input">
+                            </div>
+                        </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="loadRegion" class="input__label">Оберіть область завантаження</label>
+                            <select name="loadRegion" id="loadRegion" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтавська область</option>
+                                <option value="Полтавська область" class="create__option">Миколаївська область</option>
+                                <option value="Полтавська область" class="create__option">Київська область</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="loadCity" class="input__label">Оберіть місто завантаження</label>
+                            <select name="loadCity" id="loadCity" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтава</option>
+                                <option value="Полтавська область" class="create__option">Миколаїв</option>
+                                <option value="Полтавська область" class="create__option">Київ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-date-edit"></p>
+                        <div class="input__inner">
+                            <label for="loadDate" class="input__label">Оберіть дату завантаження</label>
+                            <input type="date" name="loadDate" id="loadDate" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="unloadRegion" class="input__label">Оберіть область розвантаження</label>
+                            <select name="unloadRegion" id="unloadRegion" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтавська область</option>
+                                <option value="Полтавська область" class="create__option">Миколаївська область</option>
+                                <option value="Полтавська область" class="create__option">Київська область</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="unloadCity" class="input__label">Оберіть місто розвантаження</label>
+                            <select name="unloadCity" id="unloadCity" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтава</option>
+                                <option value="Полтавська область" class="create__option">Миколаїв</option>
+                                <option value="Полтавська область" class="create__option">Київ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-date-edit"></p>
+                        <div class="input__inner">
+                            <label for="unloadDate" class="input__label">Оберіть дату розвантаження</label>
+                            <input type="number" name="unloadDate" id="unloadDate" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-truck"></p>
+                        <div class="input__inner">
+                            <label for="bodyType" class="input__label">Оберіть тип кузову</label>
+                            <select name="bodyType" id="bodyType" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">Тентований</option>
+                                <option value="" class="create__option">Тягач</option>
+                                <option value="" class="create__option">Автовоз</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-price-edit"></p>
+                        <div class="input__inner">
+                            <label for="price" class="input__label">Введіть ціну перевезення, грн</label>
+                            <input type="text" name="price" id="price" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-money"></p>
+                        <div class="input__inner">
+                            <label for="payType" class="input__label">Оберіть тип оплати</label>
+                            <select name="payType" id="payType" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">Готівка</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-point"></p>
+                        <div class="input__inner">
+                            <label for="distance" class="input__label">Введіть відстань перевезення, км</label>
+                            <input type="number" name="distance" id="distance" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input input__wrapper--textarea">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-info-edit"></p>
+                            <div class="input__inner">
+                                <label for="description" class="input__label">Введіть опис товару</label>
+                                <textarea name="description" id="description" class="create__textarea"></textarea>
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+                    
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox" name="urgent">
+                        <span class="custom-checkbox__box"></span>
+                        Терміновий вантаж
+                    </label>
+                    
+                    <button type="submit" class="create__form-btn">Додати вантаж</button>
+
+                </form>
+
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo-wrapper">
+            <a href=""><img src="img/logo.svg" alt="footer-logo" class="footer__logo logo"></a>
+            <p class="footer__copyright">2024 © HTTP-Logistic Service</p>
+        </div>
+
+        <div class="footer__navbar">
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Головна</li>
+                <li class="footer__navbar-item"><a href="rules.html">Правила платформи</a></li>
+                <li class="footer__navbar-item"><a href="policy.html">Політика конфіденційності</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Вантажі</li>
+                <li class="footer__navbar-item"><a href="cargos.html">Біржа вантажів</a></li>
+                <li class="footer__navbar-item"><a href="create-cargo.html">Додати вантаж</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Транспорт</li>
+                <li class="footer__navbar-item"><a href="cars.html">Біржа транспорту</a></li>
+                <li class="footer__navbar-item"><a href="create-car.html">Додати транспорт</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>  
+</div>
+<script src="js/app.min.js?_v=20240710145739"></script>  
+</body>
+</html>

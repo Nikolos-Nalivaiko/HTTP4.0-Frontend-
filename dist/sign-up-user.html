@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240710145739">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710145739">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710145739"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710145739"></script>
+    <title>Авторизація</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="header__inner container">
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="index.html" class="navbar__menu-link">Головна</a>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Вантажі</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cargos.html" class="navbar__menu-dropdown-link">Біржа вантажів</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-cargo.html" class="navbar__menu-dropdown-link">Додати вантаж</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Транспорт</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cars.html" class="navbar__menu-dropdown-link">Біржа транспорту</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-car.html" class="navbar__menu-dropdown-link">Додати транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="sign-in.html" class="navbar__btn">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="navbar__menu--mobile"></p>
+    </div>
+</header>
+<div class="popup__overlay popup__overlay--success">
+    <div class="popup">
+        <p class="popup__icon popup__icon--success __icon-success"></p>
+        <p class="popup__headline">Профіль створено</p>
+        <p class="popup__description">Ваш профіль було успішно створено</p>
+        <p class="popup__btn">Закрити</p>
+    </div>
+</div>
+<div class="popup__overlay popup__overlay--error">
+    <div class="popup">
+        <p class="popup__icon popup__icon--error __icon-error"></p>
+        <p class="popup__headline">Виникла помилка</p>
+        <p class="popup__description">Будь ласка, перевірте введені дані</p>
+        <p class="popup__btn">Закрити</p>
+    </div>
+</div>
+    <main class="main">
+        <section class="sign-up section__new-page container">
+                <h2>Реєстрація профілю</h2>
+                <p class="section__new-page-description">Зареєструйтеся, щоб отримати доступ до безмежних можливостей у світі перевезень та оренди транспорту</p>
+
+                <form action="/sign-in" method="post" class="create__form" id="createUser">
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-password"></p>
+                            <div class="input__inner">
+                                <label for="password" class="input__label">Введіть ваш пароль</label>
+                                <input type="password" name="password" id="password" class="input__input input__input--password">
+                                <p class="input__icon--password __icon-eye"></p>
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-password"></p>
+                            <div class="input__inner">
+                                <label for="confirm" class="input__label">Повторіть ваш пароль</label>
+                                <input type="password" name="confirm" id="confirm" class="input__input input__input--password">
+                                <p class="input__icon--password __icon-eye"></p>
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-login"></p>
+                            <div class="input__inner">
+                                <label for="login" class="input__label">Введіть ваш логін</label>
+                                <input type="text" name="login" id="login" class="input__input">
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-user-edit"></p>
+                            <div class="input__inner">
+                                <label for="username" class="input__label">Введіть ваше ім’я</label>
+                                <input type="text" name="username" id="username" class="input__input">
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-user-edit"></p>
+                            <div class="input__inner">
+                                <label for="middlename" class="input__label">По-батькові</label>
+                                <input type="text" name="middlename" id="middlename" class="input__input">
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-user-edit"></p>
+                            <div class="input__inner">
+                                <label for="lastname" class="input__label">Введіть ваше прізвище</label>
+                                <input type="text" name="lastname" id="lastname" class="input__input">
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="region" class="input__label">Оберіть вашу область</label>
+                            <select name="region" id="region" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтавська область</option>
+                                <option value="Полтавська область" class="create__option">Миколаївська область</option>
+                                <option value="Полтавська область" class="create__option">Київська область</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="city" class="input__label">Оберіть ваше місто</label>
+                            <select name="city" id="city" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтава</option>
+                                <option value="Полтавська область" class="create__option">Миколаїв</option>
+                                <option value="Полтавська область" class="create__option">Київ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-phone"></p>
+                        <div class="input__inner">
+                            <label for="phone" class="input__label">Введіть ваш номер телефону</label>
+                            <input type="text" name="phone" id="phone" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-email"></p>
+                        <div class="input__inner">
+                            <label for="email" class="input__label">Введіть ваш e-mail</label>
+                            <input type="text" name="email" id="email" class="input__input">
+                        </div>
+                    </div>
+
+                    <label class="create__file">
+                        <input type="file" name="images" accept="image/png, image/jpeg, image/webp">
+                        <p class="create__file-icon __icon-upload"></p>
+                        <span class="create__file-label">Завантажте фото профілю</span>
+                    </label>
+
+                    <div class="create__images">
+                    </div>
+
+                    <button type="submit" class="create__form-btn">Зареєструватись</button>
+
+                </form>
+                
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo-wrapper">
+            <a href=""><img src="img/logo.svg" alt="footer-logo" class="footer__logo logo"></a>
+            <p class="footer__copyright">2024 © HTTP-Logistic Service</p>
+        </div>
+
+        <div class="footer__navbar">
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Головна</li>
+                <li class="footer__navbar-item"><a href="rules.html">Правила платформи</a></li>
+                <li class="footer__navbar-item"><a href="policy.html">Політика конфіденційності</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Вантажі</li>
+                <li class="footer__navbar-item"><a href="cargos.html">Біржа вантажів</a></li>
+                <li class="footer__navbar-item"><a href="create-cargo.html">Додати вантаж</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Транспорт</li>
+                <li class="footer__navbar-item"><a href="cars.html">Біржа транспорту</a></li>
+                <li class="footer__navbar-item"><a href="create-car.html">Додати транспорт</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>  
+</div>
+<script src="js/app.min.js?_v=20240710145739"></script>  
+</body>
+</html>

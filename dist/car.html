@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240710145739">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710145739">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710145739"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710145739"></script>
+    <title>Інформація про транспорт</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="header__inner container">
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="index.html" class="navbar__menu-link">Головна</a>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Вантажі</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cargos.html" class="navbar__menu-dropdown-link">Біржа вантажів</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-cargo.html" class="navbar__menu-dropdown-link">Додати вантаж</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Транспорт</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cars.html" class="navbar__menu-dropdown-link">Біржа транспорту</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-car.html" class="navbar__menu-dropdown-link">Додати транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="sign-in.html" class="navbar__btn">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="navbar__menu--mobile"></p>
+    </div>
+</header>
+    <main class="main">
+        <section class="car section__new-page container">
+            <div class="car__header">
+                <div class="car__name-wrapper">
+                    <h3 class="car__name">Mercedes-Benz</h3>
+                    <p class="car__model">Sprinter 2019</p>
+                </div>
+
+                <div class="car__price-wrapper">
+                    <p class="car__price">650₴</p>
+                    <p class="car__subprice">Ціна за добу</p>
+                </div>
+            </div>
+
+            <div class="car__slider-wrapper">
+                <swiper-container class="car__slider-main" space-between="15" thumbs-swiper=".car__slider-submain"
+                navigation-next-el=".car__slider-arrow--next"
+                navigation-prev-el=".car__slider-arrow--prev">
+                    <swiper-slide>
+                        <picture><source srcset="img/car1.webp" type="image/webp"><img src="img/car1.jpg" class="car__slider-main-slide"></picture>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <picture><source srcset="img/car2.webp" type="image/webp"><img src="img/car2.jpg" class="car__slider-main-slide"></picture>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <picture><source srcset="img/car3.webp" type="image/webp"><img src="img/car3.jpg" class="car__slider-main-slide"></picture>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <picture><source srcset="img/car4.webp" type="image/webp"><img src="img/car4.jpg" class="car__slider-main-slide"></picture>
+                    </swiper-slide>
+                </swiper-container>
+
+                <swiper-container class="car__slider-submain" slides-per-view="2" direction="vertical" space-between="25">
+                    <swiper-slide class="car__slider-submain-thumb">
+                        <picture><source srcset="img/car1.webp" type="image/webp"><img src="img/car1.jpg" alt="" class="car__slider-submain-slide"></picture>
+                    </swiper-slide>
+                    <swiper-slide class="car__slider-submain-thumb">
+                        <picture><source srcset="img/car2.webp" type="image/webp"><img src="img/car2.jpg" alt="" class="car__slider-submain-slide"></picture>
+                    </swiper-slide>
+                    <swiper-slide class="car__slider-submain-thumb">
+                        <picture><source srcset="img/car3.webp" type="image/webp"><img src="img/car3.jpg" alt="" class="car__slider-submain-slide"></picture>
+                    </swiper-slide>
+                    <swiper-slide class="car__slider-submain-thumb">
+                        <picture><source srcset="img/car4.webp" type="image/webp"><img src="img/car4.jpg" alt="" class="car__slider-submain-slide"></picture>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+
+            <div class="car__underslider">
+                <ul class="car__location">
+                    <li class="car__location-city">Івано-Франківськ</li>
+                    <li class="car__location-region">Івано-Франківська область</li>
+                </ul>
+
+                <ul class="car__slider-arrows">
+                    <li class="car__slider-arrow car__slider-arrow--prev __icon-left-arrow-slider"></li>
+                    <li class="car__slider-arrow car__slider-arrow--next __icon-right-arrow-slider"></li>
+                </ul>
+            </div>
+
+            <p class="info__headline">Технічні характеристики</p>
+            <div class="car__info">
+                <div class="info__block">
+                    <p class="info__block-icon __icon-wheel-mode"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">Передній</li>
+                        <li class="info__block-subtitle">Привід</li>
+                    </ul>
+                </div>
+
+                <div class="info__block">
+                    <p class="info__block-icon __icon-truck"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">Фургон</li>
+                        <li class="info__block-subtitle">Тип кузову</li>
+                    </ul>
+                </div>
+
+                <div class="info__block">
+                    <p class="info__block-icon __icon-power"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">2.0</li>
+                        <li class="info__block-subtitle">Об’єм двигуна</li>
+                    </ul>
+                </div>
+
+                <div class="info__block">
+                    <p class="info__block-icon __icon-engine"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">160 к.с</li>
+                        <li class="info__block-subtitle">Потужність</li>
+                    </ul>
+                </div>
+
+                <div class="info__block">
+                    <p class="info__block-icon __icon-gearbox"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">Механічна</li>
+                        <li class="info__block-subtitle">Тип КПП</li>
+                    </ul>
+                </div>
+
+                <div class="info__block">
+                    <p class="info__block-icon __icon-info-edit"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">152700 км.</li>
+                        <li class="info__block-subtitle">Пробіг</li>
+                    </ul>
+                </div>
+
+                <div class="info__block">
+                    <p class="info__block-icon __icon-info-edit"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">Дизель</li>
+                        <li class="info__block-subtitle">Тип двигуна</li>
+                    </ul>
+                </div>
+
+                <div class="info__block">
+                    <p class="info__block-icon __icon-weight"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">10 т.</li>
+                        <li class="info__block-subtitle">Вантажність</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="info__headline">Опис транспорту</p>
+            <p class="info__description">Сучасна будівельна техніка, здатна піднімати вантажі до 25 тонн. Він оснащений довгою телескопічною стрілою, що забезпечує велику висоту підйому та дальність вильоту. Кран відрізняється високою маневреністю завдяки повноприводному шасі та гідравлічній системі управління. Надійність і продуктивність XCMG QY25K5 роблять його ідеальним вибором для будівельних і монтажних робіт різної складності.</p>
+
+            <div class="user__block">
+                <a href="" class="user__block-info">
+                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="user__block-image"></picture>
+                    <ul class="user__block-name-wrapper">
+                        <li class="user__block-name">Ковальчук Олександр Ігорович</li>
+                        <li class="user__block-type">Фізична особа</li>
+                    </ul>
+                </a>
+
+                <div class="user__block-contacts">
+                    <div class="user__block-contact">
+                        <p class="user__block-icon __icon-phone"></p>
+                        <ul class="user__block-contact-inner">
+                            <li class="user__block-contact-title">+38(067)-963-08-91</li>
+                            <li class="user__block-contact-subtitle">Контактний номер</li>
+                        </ul>
+                    </div>
+
+                    <div class="user__block-contact">
+                        <p class="user__block-icon __icon-star-line"></p>
+                        <ul class="user__block-contact-inner">
+                            <li class="user__block-contact-title">5,4</li>
+                            <li class="user__block-contact-subtitle">Рейтинг користувача</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="section__header">
+                    <div class="section__header-text">
+                        <h2 class="section__headline">Відгуки про платформу</h2>
+                        <p class="section__description">Відгуки про користувача – це не просто слова, а реальні враження та досвід</p>
+                    </div>
+        
+                    <div class="section__header-arrows">
+                        <p class="section__header-arrow __icon-left-arrow-slider reviews__prev"></p>
+                        <p class="section__header-arrow __icon-right-arrow-slider reviews__next"></p>
+                    </div>
+                </div> 
+                
+                <swiper-container class="reviews__slider" slides-per-view="2" space-between="45" speed="750"
+                navigation-next-el=".reviews__next"
+                navigation-prev-el=".reviews__prev">
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа2</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа3</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа4</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+
+            <div class="info__qr-wrapper">
+                <div class="info__qr-text">
+                    <h2 class="section__headline">Діліться транспортом з легкістю та QR-магією</h2>
+                    <p class="section__description">Діліться транспортом з легкістю, використовуючи  QR-коди, які надають миттєвий доступ до необхідної інформації</p>
+                </div>
+                <picture><source srcset="img/qr.webp" type="image/webp"><img src="img/qr.png" alt="" class="info__qr"></picture>
+            </div>
+
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo-wrapper">
+            <a href=""><img src="img/logo.svg" alt="footer-logo" class="footer__logo logo"></a>
+            <p class="footer__copyright">2024 © HTTP-Logistic Service</p>
+        </div>
+
+        <div class="footer__navbar">
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Головна</li>
+                <li class="footer__navbar-item"><a href="rules.html">Правила платформи</a></li>
+                <li class="footer__navbar-item"><a href="policy.html">Політика конфіденційності</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Вантажі</li>
+                <li class="footer__navbar-item"><a href="cargos.html">Біржа вантажів</a></li>
+                <li class="footer__navbar-item"><a href="create-cargo.html">Додати вантаж</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Транспорт</li>
+                <li class="footer__navbar-item"><a href="cars.html">Біржа транспорту</a></li>
+                <li class="footer__navbar-item"><a href="create-car.html">Додати транспорт</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>  
+</div>
+<script src="js/app.min.js?_v=20240710145739"></script>  
+</body>
+</html>

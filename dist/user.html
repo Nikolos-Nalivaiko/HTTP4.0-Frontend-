@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240710145739">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710145739">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710145739"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710145739"></script>
+    <title>Профіль користувача</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="header__inner container">
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="index.html" class="navbar__menu-link">Головна</a>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Вантажі</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cargos.html" class="navbar__menu-dropdown-link">Біржа вантажів</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-cargo.html" class="navbar__menu-dropdown-link">Додати вантаж</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Транспорт</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cars.html" class="navbar__menu-dropdown-link">Біржа транспорту</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-car.html" class="navbar__menu-dropdown-link">Додати транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="sign-in.html" class="navbar__btn">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="navbar__menu--mobile"></p>
+    </div>
+</header>
+    <main class="main">
+        <section class="profile">
+            <div class="user__bg"></div>
+            <div class="user__header container">
+                <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="user__image"></picture>
+                <div class="user__header-inner">
+                    <ul class="user__header-name-wrapper">
+                        <li class="user__header-name">Ткаченко Дмитро Олександрович</li>
+                        <li class="user__header-type">Фізична особа</li>
+                    </ul>
+
+                    <ul class="user__location">
+                        <li class="user__location-city">Івано-Франківськ</li>
+                        <li class="user__location-region">Івано-Франківська область</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="user__contacts">
+
+                    <div class="user__contacts-block">
+                        <p class="user__contacts-icon __icon-phone"></p>
+                        <ul class="user__contacts-inner">
+                            <li class="user__contacts-title">+38(067)-963-08-91</li>
+                            <li class="user__contacts-subtitle">Контактний номер</li>
+                        </ul>
+                    </div>
+    
+                    <div class="user__contacts-block">
+                        <p class="user__contacts-icon __icon-star-line"></p>
+                        <ul class="user__contacts-inner">
+                            <li class="user__contacts-title">5,4</li>
+                            <li class="user__contacts-subtitle">Рейтинг користувача</li>
+                        </ul>
+                    </div>
+    
+                    <div class="user__contacts-block">
+                        <p class="user__contacts-icon __icon-user-check"></p>
+                        <ul class="user__contacts-inner">
+                            <li class="user__contacts-title">Преміум</li>
+                            <li class="user__contacts-subtitle">Тип профілю</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="user__panel">
+                    <h4>Загальна інформація</h4>
+                    <p class="user__panel-subtitle">Цей розділ забезпечує доступ до ключових даних для взаємодії та підтримки користувача</p>
+
+                    <swiper-container class="user__panel-slider" slides-per-view="3" space-between="45">
+                        <swiper-slide class="user__panel-block">
+                            <p class="user__panel-icon __icon-cargo-user"></p>
+                            <p class="user__panel-block-title">Вантажі</p>
+                            <p class="user__panel-block-subtitle">Запрошуємо в захоплюючий світ вантажів цього користувача</p>
+                        </swiper-slide>
+
+                        <swiper-slide class="user__panel-block">
+                            <p class="user__panel-icon __icon-truck"></p>
+                            <p class="user__panel-block-title">Транспорт</p>
+                            <p class="user__panel-block-subtitle">Запрошуємо в захоплюючий світ транспорту цього користувача</p>
+                        </swiper-slide>
+
+                        <swiper-slide class="user__panel-block">
+                            <p class="user__panel-icon __icon-comments"></p>
+                            <p class="user__panel-block-title">Відгуки</p>
+                            <p class="user__panel-block-subtitle">Діліться враженнями та думками для поліпшення сервісу</p>
+                        </swiper-slide>
+                    </swiper-container>
+                </div>
+
+                <div class="user__reviews">
+                    <div class="user__reviews-text">
+                        <div class="user__reviews-title-wrapper">
+                            <h4>Відгуки про користувача</h4>
+                            <p class="user__reviews-subtitle">Відгуки про користувача – це не просто слова, а реальні враження та досвід</p>
+                        </div>
+
+                        <div class="user__reviews-arrows">
+                            <p class="user__reviews-arrow user__reviews-arrow--prev __icon-left-arrow-slider"></p>
+                            <p class="user__reviews-arrow user__reviews-arrow--next __icon-right-arrow-slider"></p>
+                        </div>
+                    </div>
+
+                    <swiper-container class="reviews__slider" slides-per-view="2" space-between="45" speed="750"
+                    navigation-next-el=".user__reviews-arrow--next"
+                    navigation-prev-el=".user__reviews-arrow--prev">
+                        <swiper-slide>
+                            <div class="reviews__block">
+                                <div class="reviews__block-header">
+                                    <div class="reviews__block-user">
+                                        <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                        <div class="reviews__block-text">
+                                            <p class="reviews__block-name">Ковальчук О. І.</p>
+                                            <p class="reviews__block-type">Фізична особа</p>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                                </div>
+                                <p class="reviews__block-description">
+                                    Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                                </p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="reviews__block">
+                                <div class="reviews__block-header">
+                                    <div class="reviews__block-user">
+                                        <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                        <div class="reviews__block-text">
+                                            <p class="reviews__block-name">Ковальчук О. І.</p>
+                                            <p class="reviews__block-type">Фізична особа2</p>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                                </div>
+                                <p class="reviews__block-description">
+                                    Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                                </p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="reviews__block">
+                                <div class="reviews__block-header">
+                                    <div class="reviews__block-user">
+                                        <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                        <div class="reviews__block-text">
+                                            <p class="reviews__block-name">Ковальчук О. І.</p>
+                                            <p class="reviews__block-type">Фізична особа3</p>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                                </div>
+                                <p class="reviews__block-description">
+                                    Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                                </p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="reviews__block">
+                                <div class="reviews__block-header">
+                                    <div class="reviews__block-user">
+                                        <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                        <div class="reviews__block-text">
+                                            <p class="reviews__block-name">Ковальчук О. І.</p>
+                                            <p class="reviews__block-type">Фізична особа4</p>
+                                        </div>
+                                    </div>
+                                    <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                                </div>
+                                <p class="reviews__block-description">
+                                    Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                                </p>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
+
+                    <div class="user__reviews-text user__reviews-text--add">
+                        <div class="user__reviews-title-wrapper">
+                            <h4>Ваш відгук про користувача</h4>
+                            <p class="user__reviews-subtitle">Відгуки про користувача – це не просто слова, а реальні враження та досвід</p>
+                        </div>
+
+                        <p class="user__reviews-create-btn">Редагувати відгук</p>
+                    </div>
+
+                    <div class="reviews__block reviews__block--add">
+                        <div class="reviews__block-header">
+                            <div class="reviews__block-user">
+                                <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                <div class="reviews__block-text">
+                                    <p class="reviews__block-name">Ковальчук О. І.</p>
+                                    <p class="reviews__block-type">Фізична особа4</p>
+                                </div>
+                            </div>
+                            <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                        </div>
+                        <p class="reviews__block-description">
+                            Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="user__cargos" style="display: none;">
+                    <h4 class="user__underpanel-title">Ваші вантажі</h4>
+
+                    <div class="cargos__list">
+
+                        <a href="cargo.html" class="cargos__block">
+                            <div class="cargos__block-header">
+    
+                                <div class="cargos__block-header-info">
+                                    <p class="cargos__block-name">Медичне обладнання</p>
+                                    <ul class="cargos__block-header-info-list">
+                                        <li class="cargos__block-header-info-item">20 т.</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">Тентований</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">≈200 км.</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="cargos__block-price-wrapper">
+                                    <p class="cargos__block-price">25000₴</p>
+                                    <p class="cargos__block-subprice">20,8₴ / км.</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="cargos__footer-wrapper">
+                                <div class="cargos__footer">
+                                    <div class="cargos__footer-location">
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Кременчук</li>
+                                            <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                        </ul>
+            
+                                        <div class="cargos__decor-point">
+                                            <div class="cargos__decor-point-circle"></div>
+                                            <div class="cargos__decor-point-line"></div>
+                                            <div class="cargos__decor-point-circle"></div>
+                                        </div>
+            
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Дніпро</li>
+                                            <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                        </ul>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">16.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                    </ul>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">06.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                    </ul>
+                                </div>
+                                <ul class="cargos__icons">
+                                    <li class="cargos__icon __icon-time"></li>
+                                    <li class="cargos__icon __icon-cargos-premium"></li>
+                                </ul>
+                            </div>
+                        </a>
+    
+                        <a href="" class="cargos__block">
+                            <div class="cargos__block-header">
+    
+                                <div class="cargos__block-header-info">
+                                    <p class="cargos__block-name">Медичне обладнання</p>
+                                    <ul class="cargos__block-header-info-list">
+                                        <li class="cargos__block-header-info-item">20 т.</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">Тентований</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">≈200 км.</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="cargos__block-price-wrapper">
+                                    <p class="cargos__block-price">25000₴</p>
+                                    <p class="cargos__block-subprice">20,8₴ / км.</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="cargos__footer-wrapper">
+                                <div class="cargos__footer">
+                                    <div class="cargos__footer-location">
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Кременчук</li>
+                                            <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                        </ul>
+            
+                                        <div class="cargos__decor-point">
+                                            <div class="cargos__decor-point-circle"></div>
+                                            <div class="cargos__decor-point-line"></div>
+                                            <div class="cargos__decor-point-circle"></div>
+                                        </div>
+            
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Дніпро</li>
+                                            <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                        </ul>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">16.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                    </ul>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">06.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                    </ul>
+                                </div>
+                                <ul class="cargos__icons">
+                                    <li class="cargos__icon __icon-time"></li>
+                                    <li class="cargos__icon __icon-cargos-premium"></li>
+                                </ul>
+                            </div>
+                        </a>
+    
+                        <a href="" class="cargos__block">
+                            <div class="cargos__block-header">
+    
+                                <div class="cargos__block-header-info">
+                                    <p class="cargos__block-name">Медичне обладнання</p>
+                                    <ul class="cargos__block-header-info-list">
+                                        <li class="cargos__block-header-info-item">20 т.</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">Тентований</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">≈200 км.</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="cargos__block-price-wrapper">
+                                    <p class="cargos__block-price">25000₴</p>
+                                    <p class="cargos__block-subprice">20,8₴ / км.</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="cargos__footer-wrapper">
+                                <div class="cargos__footer">
+                                    <div class="cargos__footer-location">
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Кременчук</li>
+                                            <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                        </ul>
+            
+                                        <div class="cargos__decor-point">
+                                            <div class="cargos__decor-point-circle"></div>
+                                            <div class="cargos__decor-point-line"></div>
+                                            <div class="cargos__decor-point-circle"></div>
+                                        </div>
+            
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Дніпро</li>
+                                            <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                        </ul>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">16.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                    </ul>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">06.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                    </ul>
+                                </div>
+                                <ul class="cargos__icons">
+                                    <li class="cargos__icon __icon-time"></li>
+                                    <li class="cargos__icon __icon-cargos-premium"></li>
+                                </ul>
+                            </div>
+                        </a>
+    
+                        <a href="" class="cargos__block">
+                            <div class="cargos__block-header">
+    
+                                <div class="cargos__block-header-info">
+                                    <p class="cargos__block-name">Медичне обладнання</p>
+                                    <ul class="cargos__block-header-info-list">
+                                        <li class="cargos__block-header-info-item">20 т.</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">Тентований</li>
+                                        <li class="cargos__block-header-info-item--dot"></li>
+                                        <li class="cargos__block-header-info-item">≈200 км.</li>
+                                    </ul>
+                                </div>
+    
+                                <div class="cargos__block-price-wrapper">
+                                    <p class="cargos__block-price">25000₴</p>
+                                    <p class="cargos__block-subprice">20,8₴ / км.</p>
+                                </div>
+    
+                            </div>
+    
+                            <div class="cargos__footer-wrapper">
+                                <div class="cargos__footer">
+                                    <div class="cargos__footer-location">
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Кременчук</li>
+                                            <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                        </ul>
+            
+                                        <div class="cargos__decor-point">
+                                            <div class="cargos__decor-point-circle"></div>
+                                            <div class="cargos__decor-point-line"></div>
+                                            <div class="cargos__decor-point-circle"></div>
+                                        </div>
+            
+                                        <ul class="cargos__footer-list">
+                                            <li class="cargos__footer-item-title">Дніпро</li>
+                                            <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                        </ul>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">16.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                    </ul>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">06.01.2024</li>
+                                        <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                    </ul>
+                                </div>
+                                <ul class="cargos__icons">
+                                    <li class="cargos__icon __icon-time"></li>
+                                    <li class="cargos__icon __icon-cargos-premium"></li>
+                                </ul>
+                            </div>
+                        </a>
+    
+                    </div>
+                </div>                
+
+                <div class="user__cars" style="display: none;">
+                    <h4 class="user__underpanel-title">Транспорт користувача</h4>
+
+                    <div class="cars__list">
+                        <div class="cars__block">
+                            <div class="cars__block-inner">
+                                <div class="cars__block-header">
+                                    <p class="cars__block-brand">Mercedes-Benz</p>
+                                    <p class="cars__block-model">Sprinter 2019</p>
+                                </div>
+        
+                                <ul class="cars__block-info">
+                                    <li class="cars__block-info-item">Фургон</li>
+                                    <li class="cars__block-info-item">Автомат</li>
+                                    <li class="cars__block-info-item">10 т.</li>
+                                    <li class="cars__block-info-item">Бензин</li>
+                                    <li class="cars__block-info-item">2.0 л.</li>
+                                </ul>
+        
+                                <picture><source srcset="img/car1.webp" type="image/webp"><img src="img/car1.jpg" alt="" class="cars__block-image"></picture>
+        
+                                <p class="cars__block-city">Івано-Франківськ</p>
+                                <p class="cars__block-region">Івано-Франківська область</p>
+                            </div>
+    
+                            <div class="cars__block-footer">
+                                <div class="cars__block-footer-inner">
+                                    <div class="cars__block-price-wrapper">
+                                        <p class="cars__block-price">650₴</p>
+                                        <p class="cars__block-subprice">Ціна за добу</p>
+                                    </div>
+    
+                                    <a href="car.html" class="cars__block-btn">Детальніше</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="cars__block">
+                            <div class="cars__block-inner">
+                                <div class="cars__block-header">
+                                    <p class="cars__block-brand">Mercedes-Benz</p>
+                                    <p class="cars__block-model">Sprinter 2019</p>
+                                </div>
+        
+                                <ul class="cars__block-info">
+                                    <li class="cars__block-info-item">Фургон</li>
+                                    <li class="cars__block-info-item">Автомат</li>
+                                    <li class="cars__block-info-item">10 т.</li>
+                                    <li class="cars__block-info-item">Бензин</li>
+                                    <li class="cars__block-info-item">2.0 л.</li>
+                                </ul>
+        
+                                <picture><source srcset="img/car1.webp" type="image/webp"><img src="img/car1.jpg" alt="" class="cars__block-image"></picture>
+        
+                                <p class="cars__block-city">Івано-Франківськ</p>
+                                <p class="cars__block-region">Івано-Франківська область</p>
+                            </div>
+    
+                            <div class="cars__block-footer">
+                                <div class="cars__block-footer-inner">
+                                    <div class="cars__block-price-wrapper">
+                                        <p class="cars__block-price">650₴</p>
+                                        <p class="cars__block-subprice">Ціна за добу</p>
+                                    </div>
+    
+                                    <a href="" class="cars__block-btn">Детальніше</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="cars__block">
+                            <div class="cars__block-inner">
+                                <div class="cars__block-header">
+                                    <p class="cars__block-brand">Mercedes-Benz</p>
+                                    <p class="cars__block-model">Sprinter 2019</p>
+                                </div>
+        
+                                <ul class="cars__block-info">
+                                    <li class="cars__block-info-item">Фургон</li>
+                                    <li class="cars__block-info-item">Автомат</li>
+                                    <li class="cars__block-info-item">10 т.</li>
+                                    <li class="cars__block-info-item">Бензин</li>
+                                    <li class="cars__block-info-item">2.0 л.</li>
+                                </ul>
+        
+                                <picture><source srcset="img/car1.webp" type="image/webp"><img src="img/car1.jpg" alt="" class="cars__block-image"></picture>
+        
+                                <p class="cars__block-city">Івано-Франківськ</p>
+                                <p class="cars__block-region">Івано-Франківська область</p>
+                            </div>
+    
+                            <div class="cars__block-footer">
+                                <div class="cars__block-footer-inner">
+                                    <div class="cars__block-price-wrapper">
+                                        <p class="cars__block-price">650₴</p>
+                                        <p class="cars__block-subprice">Ціна за добу</p>
+                                    </div>
+    
+                                    <a href="" class="cars__block-btn">Детальніше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo-wrapper">
+            <a href=""><img src="img/logo.svg" alt="footer-logo" class="footer__logo logo"></a>
+            <p class="footer__copyright">2024 © HTTP-Logistic Service</p>
+        </div>
+
+        <div class="footer__navbar">
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Головна</li>
+                <li class="footer__navbar-item"><a href="rules.html">Правила платформи</a></li>
+                <li class="footer__navbar-item"><a href="policy.html">Політика конфіденційності</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Вантажі</li>
+                <li class="footer__navbar-item"><a href="cargos.html">Біржа вантажів</a></li>
+                <li class="footer__navbar-item"><a href="create-cargo.html">Додати вантаж</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Транспорт</li>
+                <li class="footer__navbar-item"><a href="cars.html">Біржа транспорту</a></li>
+                <li class="footer__navbar-item"><a href="create-car.html">Додати транспорт</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>  
+</div>
+<script src="js/app.min.js?_v=20240710145739"></script>  
+</body>
+</html>

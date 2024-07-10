@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240710145739">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710145739">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710145739"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710145739"></script>
+    <title>Новий транспорт</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="header__inner container">
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="index.html" class="navbar__menu-link">Головна</a>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Вантажі</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cargos.html" class="navbar__menu-dropdown-link">Біржа вантажів</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-cargo.html" class="navbar__menu-dropdown-link">Додати вантаж</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Транспорт</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cars.html" class="navbar__menu-dropdown-link">Біржа транспорту</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-car.html" class="navbar__menu-dropdown-link">Додати транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="sign-in.html" class="navbar__btn">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="navbar__menu--mobile"></p>
+    </div>
+</header>
+    <main class="main">
+        <section class="select section__new-page container">
+                <h2>Новий транспорт</h2>
+                <p class="section__new-page-description">Вкажіть необхідні дані, визначте умови перевезення та отримайте доступ до широкого спектру транспортних рішень</p>
+
+                <form action="" method="post" class="create__form" id="createCar">
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-info-edit"></p>
+                        <div class="input__inner">
+                            <label for="brand" class="input__label">Оберіть марку транспорту</label>
+                            <select name="brand" id="brand" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">KRAZ</option>
+                                <option value="" class="create__option">GAZ</option>
+                                <option value="" class="create__option">MAZ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-info-edit"></p>
+                        <div class="input__inner">
+                            <label for="model" class="input__label">Оберіть модель транспорту</label>
+                            <select name="model" id="model" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">5401</option>
+                                <option value="" class="create__option">5505</option>
+                                <option value="" class="create__option">6512</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-power"></p>
+                        <div class="input__inner">
+                            <label for="engine" class="input__label">Введіть об’єм двигуна, л</label>
+                            <input type="number" name="engine" id="engine" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-wheel-mode"></p>
+                        <div class="input__inner">
+                            <label for="wheelMode" class="input__label">Оберіть привід транспорту</label>
+                            <select name="wheelMode" id="wheelMode" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">Задній</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-engine"></p>
+                        <div class="input__inner">
+                            <label for="power" class="input__label">Введіть потужність транспорту, к.с</label>
+                            <input type="number" name="power" id="power" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-gearbox"></p>
+                        <div class="input__inner">
+                            <label for="gearbox" class="input__label">Оберіть тип КПП</label>
+                            <select name="gearbox" id="gearbox" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">Автоматична</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-truck"></p>
+                        <div class="input__inner">
+                            <label for="bodyType" class="input__label">Оберіть тип кузову</label>
+                            <select name="bodyType" id="bodyType" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">Тентований</option>
+                                <option value="" class="create__option">Тягач</option>
+                                <option value="" class="create__option">Автовоз</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-info-edit"></p>
+                        <div class="input__inner">
+                            <label for="engineType" class="input__label">Оберіть тип двигуна</label>
+                            <select name="engineType" id="engineType" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-weight"></p>
+                        <div class="input__inner">
+                            <label for="weight" class="input__label">Введіть вантажопідйомність, кг</label>
+                            <input name="weight" type="number" id="weight" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-date-edit"></p>
+                        <div class="input__inner">
+                            <label for="year" class="input__label">Оберіть рік випуску транспорту</label>
+                            <select name="year" id="year" class="create__select">
+                                <option value="" hidden selected class="create__option"></option>
+                                <option value="" class="create__option">2024</option>
+                                <option value="" class="create__option">2023</option>
+                                <option value="" class="create__option">2022</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-info-edit"></p>
+                        <div class="input__inner">
+                            <label for="mileage" class="input__label">Введіть пробіг транспорту, км</label>
+                            <input type="number" name="mileage" id="mileage" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="region" class="input__label">Оберіть область знаходження</label>
+                            <select name="region" id="region" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтавська область</option>
+                                <option value="Полтавська область" class="create__option">Миколаївська область</option>
+                                <option value="Полтавська область" class="create__option">Київська область</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-map"></p>
+                        <div class="input__inner">
+                            <label for="city" class="input__label">Оберіть місто знаходження</label>
+                            <select name="city" id="city" class="create__select">
+                                <option value="Полтавська область" hidden selected class="create__option"></option>
+                                <option value="Полтавська область" class="create__option">Полтава</option>
+                                <option value="Полтавська область" class="create__option">Миколаїв</option>
+                                <option value="Полтавська область" class="create__option">Київ</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input__wrapper">
+                        <p class="input__icon __icon-price-edit"></p>
+                        <div class="input__inner">
+                            <label for="price" class="input__label">Введіть ціну за добу, грн</label>
+                            <input type="number" name="price" id="price" class="input__input">
+                        </div>
+                    </div>
+
+                    <div class="input input__wrapper--textarea">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-info-edit"></p>
+                            <div class="input__inner">
+                                <label for="description" class="input__label">Введіть опис транспорту</label>
+                                <textarea name="description" id="description" class="create__textarea"></textarea>
+                            </div>
+                        </div>
+                        <span class="error-message"></span>
+                    </div>
+
+                    <label class="create__file">
+                        <input type="file" name="images" accept="image/png, image/jpeg, image/webp" multiple>
+                        <p class="create__file-icon __icon-upload"></p>
+                        <span class="create__file-label">Завантажте фото профілю</span>
+                    </label>
+
+                    <div class="create__images">
+                        <div class="create__loader-wrapper" style="display: none;">
+                            <div class="loader create__loader" id="loader"></div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="create__form-btn">Додати транспорт</button>
+                    
+                </form>
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo-wrapper">
+            <a href=""><img src="img/logo.svg" alt="footer-logo" class="footer__logo logo"></a>
+            <p class="footer__copyright">2024 © HTTP-Logistic Service</p>
+        </div>
+
+        <div class="footer__navbar">
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Головна</li>
+                <li class="footer__navbar-item"><a href="rules.html">Правила платформи</a></li>
+                <li class="footer__navbar-item"><a href="policy.html">Політика конфіденційності</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Вантажі</li>
+                <li class="footer__navbar-item"><a href="cargos.html">Біржа вантажів</a></li>
+                <li class="footer__navbar-item"><a href="create-cargo.html">Додати вантаж</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Транспорт</li>
+                <li class="footer__navbar-item"><a href="cars.html">Біржа транспорту</a></li>
+                <li class="footer__navbar-item"><a href="create-car.html">Додати транспорт</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>  
+</div>
+<script src="js/app.min.js?_v=20240710145739"></script>  
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240710145739">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710145739">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710145739"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710145739"></script>
+    <title>Інформація про вантаж</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="header__inner container">
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="index.html" class="navbar__menu-link">Головна</a>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Вантажі</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cargos.html" class="navbar__menu-dropdown-link">Біржа вантажів</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-cargo.html" class="navbar__menu-dropdown-link">Додати вантаж</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Транспорт</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cars.html" class="navbar__menu-dropdown-link">Біржа транспорту</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-car.html" class="navbar__menu-dropdown-link">Додати транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="sign-in.html" class="navbar__btn">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="navbar__menu--mobile"></p>
+    </div>
+</header>
+    <main class="main">
+        <section class="cargo section__new-page container">
+            <div class="cargo__header">
+                <div class="cargo__header-inner">
+                    <div class="cargo__name-wrapper">
+                        <p class="cargo__name-icon __icon-cargo"></p>
+                        <h3 class="cargo__name">Медичне обладнання</h3>
+                    </div>
+    
+                    <div class="cargo__price-wrapper">
+                        <p class="cargo__price">25000₴</p>
+                        <p class="cargo__subprice">20,8₴ / км.</p>
+                    </div>
+                </div>
+
+                <div class="cargo__header-icons">
+                    <p class="cargo__header-icon __icon-time"></p>
+                    <p class="cargo__header-icon __icon-cargos-premium"></p>
+                </div>
+            </div>
+
+            <div class="cargo__location">
+                <div class="cargo__location-block">
+                    <p class="cargo__location-block-icon __icon-map"></p>
+                    <ul class="cargo__location-block-list">
+                        <li class="cargo__location-block-title">Івано-Франківськ</li>
+                        <li class="cargo__location-block-subtitle">Івано-Франківська область</li>
+                        <li class="cargo__location-block-date">06.06.2023</li>
+                    </ul>
+                </div>
+
+                <div class="cargos__decor-point">
+                    <div class="cargos__decor-point-circle"></div>
+                    <div class="cargos__decor-point-line cargos__decor-point-line--long"></div>
+                    <div class="cargos__decor-point-circle"></div>
+                </div>
+
+                <div class="cargo__location-block">
+                    <p class="cargo__location-block-icon __icon-map"></p>
+                    <ul class="cargo__location-block-list">
+                        <li class="cargo__location-block-title">Івано-Франківськ</li>
+                        <li class="cargo__location-block-subtitle">Івано-Франківська область</li>
+                        <li class="cargo__location-block-date">06.06.2023</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="info__headline">Загальна інформація</p>
+
+            <div class="info__blocks">
+                <div class="info__block">
+                    <p class="info__block-icon __icon-weight"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">5600</li>
+                        <li class="info__block-subtitle">Вага товару, кг</li>
+                    </ul>
+                </div>
+    
+                <div class="info__block">
+                    <p class="info__block-icon __icon-money"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">Готівка</li>
+                        <li class="info__block-subtitle">Тип оплати</li>
+                    </ul>
+                </div>
+    
+                <div class="info__block">
+                    <p class="info__block-icon __icon-truck"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">Тентований</li>
+                        <li class="info__block-subtitle">Тип кузову</li>
+                    </ul>
+                </div>
+    
+                <div class="info__block">
+                    <p class="info__block-icon __icon-point"></p>
+                    <ul class="info__block-inner">
+                        <li class="info__block-title">≈200</li>
+                        <li class="info__block-subtitle">Відстань , км</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="info__headline">Опис вантажу</p>
+            <p class="info__description">Замовлення перевезення наших бетонних плит - це швидкий та безпечний спосіб доставки будівельного матеріалу на будь-яку будівельну площадку. Незалежно від розміру чи обсягу вашого проекту, наші плити готові до перевезення в найкращому стані, забезпечуючи безперебійне використання для вашої будівлі чи інфраструктурного об'єкту. </p>
+
+            <div class="user__block">
+                <a href="" class="user__block-info">
+                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="user__block-image"></picture>
+                    <ul class="user__block-name-wrapper">
+                        <li class="user__block-name">Ковальчук Олександр Ігорович</li>
+                        <li class="user__block-type">Фізична особа</li>
+                    </ul>
+                </a>
+
+                <div class="user__block-contacts">
+                    <div class="user__block-contact">
+                        <p class="user__block-icon __icon-phone"></p>
+                        <ul class="user__block-contact-inner">
+                            <li class="user__block-contact-title">+38(067)-963-08-91</li>
+                            <li class="user__block-contact-subtitle">Контактний номер</li>
+                        </ul>
+                    </div>
+
+                    <div class="user__block-contact">
+                        <p class="user__block-icon __icon-star-line"></p>
+                        <ul class="user__block-contact-inner">
+                            <li class="user__block-contact-title">5,4</li>
+                            <li class="user__block-contact-subtitle">Рейтинг користувача</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews">
+                <div class="section__header">
+                    <div class="section__header-text">
+                        <h2 class="section__headline">Відгуки про платформу</h2>
+                        <p class="section__description">Відгуки про користувача – це не просто слова, а реальні враження та досвід</p>
+                    </div>
+        
+                    <div class="section__header-arrows">
+                        <p class="section__header-arrow __icon-left-arrow-slider reviews__prev"></p>
+                        <p class="section__header-arrow __icon-right-arrow-slider reviews__next"></p>
+                    </div>
+                </div> 
+                
+                <swiper-container class="reviews__slider" slides-per-view="2" space-between="45" speed="750"
+                navigation-next-el=".reviews__next"
+                navigation-prev-el=".reviews__prev">
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа2</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа3</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="reviews__block">
+                            <div class="reviews__block-header">
+                                <div class="reviews__block-user">
+                                    <picture><source srcset="img/userImage.webp" type="image/webp"><img src="img/userImage.jpg" alt="" class="reviews__block-image"></picture>
+                                    <div class="reviews__block-text">
+                                        <p class="reviews__block-name">Ковальчук О. І.</p>
+                                        <p class="reviews__block-type">Фізична особа4</p>
+                                    </div>
+                                </div>
+                                <p class="reviews__block-rating __icon-star-fill">4,8</p>
+                            </div>
+                            <p class="reviews__block-description">
+                                Наша компанія з великим задоволенням використовує логічну платформу для організації перевезень. Цей інноваційний інструмент дозволяє нам ефективно керувати нашим транспортним парком та знаходити оптимальні маршрути для доставки вантажів. Легка навігація, надійність та зручність взаємодії з іншими учасниками ринку роблять цю платформу незамінною для наших потреб. 
+                            </p>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+
+            <div class="info__qr-wrapper">
+                <div class="info__qr-text">
+                    <h2 class="section__headline">Діліться вантажем з легкістю та QR-магією</h2>
+                    <p class="section__description">Діліться вантажем з легкістю, використовуючи  QR-коди, які надають миттєвий доступ до необхідної інформації</p>
+                </div>
+                <picture><source srcset="img/qr.webp" type="image/webp"><img src="img/qr.png" alt="" class="info__qr"></picture>
+            </div>
+
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo-wrapper">
+            <a href=""><img src="img/logo.svg" alt="footer-logo" class="footer__logo logo"></a>
+            <p class="footer__copyright">2024 © HTTP-Logistic Service</p>
+        </div>
+
+        <div class="footer__navbar">
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Головна</li>
+                <li class="footer__navbar-item"><a href="rules.html">Правила платформи</a></li>
+                <li class="footer__navbar-item"><a href="policy.html">Політика конфіденційності</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Вантажі</li>
+                <li class="footer__navbar-item"><a href="cargos.html">Біржа вантажів</a></li>
+                <li class="footer__navbar-item"><a href="create-cargo.html">Додати вантаж</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Транспорт</li>
+                <li class="footer__navbar-item"><a href="cars.html">Біржа транспорту</a></li>
+                <li class="footer__navbar-item"><a href="create-car.html">Додати транспорт</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>  
+</div>
+<script src="js/app.min.js?_v=20240710145739"></script>  
+</body>
+</html>

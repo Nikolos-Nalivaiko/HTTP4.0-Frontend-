@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240710145739">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710145739">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710145739"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710145739"></script>
+    <title>Біржа вантажів</title>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="header__inner container">
+        <a href="index.html"><img src="img/logo.svg" class="logo" alt="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar__menu">
+                <li class="navbar__menu-item">
+                    <a href="index.html" class="navbar__menu-link">Головна</a>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Вантажі</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cargos.html" class="navbar__menu-dropdown-link">Біржа вантажів</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-cargo.html" class="navbar__menu-dropdown-link">Додати вантаж</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item dropdown">
+                    <p class="navbar__menu-link">Транспорт</p>
+                    <ul class="navbar__menu-dropdown">
+                        <li class="navbar__menu-dropdown-item"><a href="cars.html" class="navbar__menu-dropdown-link">Біржа транспорту</a></li>
+                        <li class="navbar__menu-dropdown-item"><a href="create-car.html" class="navbar__menu-dropdown-link">Додати транспорт</a></li>
+                    </ul>
+                </li>
+                <li class="navbar__menu-item">
+                    <a href="sign-in.html" class="navbar__btn">Увійти</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p class="navbar__menu--mobile"></p>
+    </div>
+</header>
+    <main class="main">
+        <section class="cargos section__new-page container">
+                <h2>Біржа вантажів</h2>
+
+                <div class="exchange">
+                    <form action="" class="exchange__search">
+                        <input type="text" class="exchange__input" placeholder="Введіть назву вантажу">
+                        <button class="exchange__button">Пошук</button>
+                    </form>
+
+                    <p class="exchange__filter-open-btn __icon-filter">Фільтри</p>
+
+                    <a href="" class="exchange__create __icon-plus">Додати вантаж</a>
+                </div>
+
+                <p class="filter__title">Пошук за фільтрам</p>
+
+                <form action="" method="post" class="filter__form">
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Оберіть область завантаження</label>
+                        <select name="" id="" class="filter__select">
+                            <option value="" hidden selected class="filter__option"></option>
+                            <option value="" class="filter__option">Полтавська область</option>
+                            <option value="" class="filter__option">Миколаївська область</option>
+                            <option value="" class="filter__option">Київська область</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Оберіть місто завантаження</label>
+                        <select name="" id="" class="filter__select">
+                            <option value="" hidden selected class="filter__option"></option>
+                            <option value="" class="filter__option">Полтава</option>
+                            <option value="" class="filter__option">Миколаїв</option>
+                            <option value="" class="filter__option">Київ</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Оберіть область завантаження</label>
+                        <select name="" id="" class="filter__select">
+                            <option value="" hidden selected class="filter__option"></option>
+                            <option value="" class="filter__option">Полтавська область</option>
+                            <option value="" class="filter__option">Миколаївська область</option>
+                            <option value="" class="filter__option">Київська область</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Оберіть місто завантаження</label>
+                        <select name="" id="" class="filter__select">
+                            <option value="" hidden selected class="filter__option"></option>
+                            <option value="" class="filter__option">Полтава</option>
+                            <option value="" class="filter__option">Миколаїв</option>
+                            <option value="" class="filter__option">Київ</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Оберіть тип кузову</label>
+                        <select name="" id="" class="filter__select">
+                            <option value="" hidden selected class="filter__option"></option>
+                            <option value="" class="filter__option">Тентований</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Оберіть тип оплати</label>
+                        <select name="" id="" class="filter__select">
+                            <option value="" hidden selected class="filter__option"></option>
+                            <option value="" class="filter__option">Готівка</option>
+                        </select>
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Введіть вагу товару від, кг</label>
+                        <input type="number" class="filter__input">
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Введіть вагу товару до, кг</label>
+                        <input type="number" class="filter__input">
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Відстань від, км.</label>
+                        <input type="number" class="filter__input">
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Відстань до, км.</label>
+                        <input type="number" class="filter__input">
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Дата завантаження</label>
+                        <input type="date" class="filter__input">
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Дата розвантаження</label>
+                        <input type="date" class="filter__input">
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Вартість від, грн.</label>
+                        <input type="number" class="filter__input">
+                    </div>
+
+                    <div class="filter__input-wrapper">
+                        <label for="" class="filter__label">Вартість до, грн.</label>
+                        <input type="number" class="filter__input">
+                    </div>
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="custom-checkbox__box"></span>
+                        Терміновий вантаж
+                    </label>
+
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="custom-checkbox__box"></span>
+                        Преміум вантаж
+                    </label>
+
+                    <div class="filter__buttons">
+                        <button class="filter__send-btn">Знайти</button>
+                        <p class="filter__clear-btn">Очистити</p>
+                    </div>
+
+                </form>
+
+                <p class="exchange__title">Знайдені вантажі</p>
+
+                <div class="cargos__list">
+
+                    <a href="cargo.html" class="cargos__block">
+                        <div class="cargos__block-header">
+
+                            <div class="cargos__block-header-info">
+                                <p class="cargos__block-name">Медичне обладнання</p>
+                                <ul class="cargos__block-header-info-list">
+                                    <li class="cargos__block-header-info-item">20 т.</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">Тентований</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">≈200 км.</li>
+                                </ul>
+                            </div>
+
+                            <div class="cargos__block-price-wrapper">
+                                <p class="cargos__block-price">25000₴</p>
+                                <p class="cargos__block-subprice">20,8₴ / км.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="cargos__footer-wrapper">
+                            <div class="cargos__footer">
+                                <div class="cargos__footer-location">
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Кременчук</li>
+                                        <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                    </ul>
+        
+                                    <div class="cargos__decor-point">
+                                        <div class="cargos__decor-point-circle"></div>
+                                        <div class="cargos__decor-point-line"></div>
+                                        <div class="cargos__decor-point-circle"></div>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Дніпро</li>
+                                        <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                    </ul>
+                                </div>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">16.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                </ul>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">06.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                </ul>
+                            </div>
+                            <ul class="cargos__icons">
+                                <li class="cargos__icon __icon-time"></li>
+                                <li class="cargos__icon __icon-cargos-premium"></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a href="" class="cargos__block">
+                        <div class="cargos__block-header">
+
+                            <div class="cargos__block-header-info">
+                                <p class="cargos__block-name">Медичне обладнання</p>
+                                <ul class="cargos__block-header-info-list">
+                                    <li class="cargos__block-header-info-item">20 т.</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">Тентований</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">≈200 км.</li>
+                                </ul>
+                            </div>
+
+                            <div class="cargos__block-price-wrapper">
+                                <p class="cargos__block-price">25000₴</p>
+                                <p class="cargos__block-subprice">20,8₴ / км.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="cargos__footer-wrapper">
+                            <div class="cargos__footer">
+                                <div class="cargos__footer-location">
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Кременчук</li>
+                                        <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                    </ul>
+        
+                                    <div class="cargos__decor-point">
+                                        <div class="cargos__decor-point-circle"></div>
+                                        <div class="cargos__decor-point-line"></div>
+                                        <div class="cargos__decor-point-circle"></div>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Дніпро</li>
+                                        <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                    </ul>
+                                </div>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">16.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                </ul>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">06.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                </ul>
+                            </div>
+                            <ul class="cargos__icons">
+                                <li class="cargos__icon __icon-time"></li>
+                                <li class="cargos__icon __icon-cargos-premium"></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a href="" class="cargos__block">
+                        <div class="cargos__block-header">
+
+                            <div class="cargos__block-header-info">
+                                <p class="cargos__block-name">Медичне обладнання</p>
+                                <ul class="cargos__block-header-info-list">
+                                    <li class="cargos__block-header-info-item">20 т.</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">Тентований</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">≈200 км.</li>
+                                </ul>
+                            </div>
+
+                            <div class="cargos__block-price-wrapper">
+                                <p class="cargos__block-price">25000₴</p>
+                                <p class="cargos__block-subprice">20,8₴ / км.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="cargos__footer-wrapper">
+                            <div class="cargos__footer">
+                                <div class="cargos__footer-location">
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Кременчук</li>
+                                        <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                    </ul>
+        
+                                    <div class="cargos__decor-point">
+                                        <div class="cargos__decor-point-circle"></div>
+                                        <div class="cargos__decor-point-line"></div>
+                                        <div class="cargos__decor-point-circle"></div>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Дніпро</li>
+                                        <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                    </ul>
+                                </div>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">16.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                </ul>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">06.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                </ul>
+                            </div>
+                            <ul class="cargos__icons">
+                                <li class="cargos__icon __icon-time"></li>
+                                <li class="cargos__icon __icon-cargos-premium"></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <a href="" class="cargos__block">
+                        <div class="cargos__block-header">
+
+                            <div class="cargos__block-header-info">
+                                <p class="cargos__block-name">Медичне обладнання</p>
+                                <ul class="cargos__block-header-info-list">
+                                    <li class="cargos__block-header-info-item">20 т.</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">Тентований</li>
+                                    <li class="cargos__block-header-info-item--dot"></li>
+                                    <li class="cargos__block-header-info-item">≈200 км.</li>
+                                </ul>
+                            </div>
+
+                            <div class="cargos__block-price-wrapper">
+                                <p class="cargos__block-price">25000₴</p>
+                                <p class="cargos__block-subprice">20,8₴ / км.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="cargos__footer-wrapper">
+                            <div class="cargos__footer">
+                                <div class="cargos__footer-location">
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Кременчук</li>
+                                        <li class="cargos__footer-item-subtitle">Полтавська область</li>
+                                    </ul>
+        
+                                    <div class="cargos__decor-point">
+                                        <div class="cargos__decor-point-circle"></div>
+                                        <div class="cargos__decor-point-line"></div>
+                                        <div class="cargos__decor-point-circle"></div>
+                                    </div>
+        
+                                    <ul class="cargos__footer-list">
+                                        <li class="cargos__footer-item-title">Дніпро</li>
+                                        <li class="cargos__footer-item-subtitle">Дніпропетровська область</li>
+                                    </ul>
+                                </div>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">16.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата розвантаження</li>
+                                </ul>
+    
+                                <ul class="cargos__footer-list">
+                                    <li class="cargos__footer-item-title">06.01.2024</li>
+                                    <li class="cargos__footer-item-subtitle">Дата завантаження</li>
+                                </ul>
+                            </div>
+                            <ul class="cargos__icons">
+                                <li class="cargos__icon __icon-time"></li>
+                                <li class="cargos__icon __icon-cargos-premium"></li>
+                            </ul>
+                        </div>
+                    </a>
+
+                </div>
+
+        </section>
+    </main>
+<footer class="footer">
+    <div class="footer__inner container">
+        <div class="footer__logo-wrapper">
+            <a href=""><img src="img/logo.svg" alt="footer-logo" class="footer__logo logo"></a>
+            <p class="footer__copyright">2024 © HTTP-Logistic Service</p>
+        </div>
+
+        <div class="footer__navbar">
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Головна</li>
+                <li class="footer__navbar-item"><a href="rules.html">Правила платформи</a></li>
+                <li class="footer__navbar-item"><a href="policy.html">Політика конфіденційності</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Вантажі</li>
+                <li class="footer__navbar-item"><a href="cargos.html">Біржа вантажів</a></li>
+                <li class="footer__navbar-item"><a href="create-cargo.html">Додати вантаж</a></li>
+            </ul>
+            <ul class="footer__navbar-list">
+                <li class="footer__navbar-item--main">Транспорт</li>
+                <li class="footer__navbar-item"><a href="cars.html">Біржа транспорту</a></li>
+                <li class="footer__navbar-item"><a href="create-car.html">Додати транспорт</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>  
+</div>
+<script src="js/app.min.js?_v=20240710145739"></script>  
+</body>
+</html>
