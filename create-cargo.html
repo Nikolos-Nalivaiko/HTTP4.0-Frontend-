@@ -3,10 +3,10 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240710224117">
-    <link rel="stylesheet" href="files/iconsfont.css?_v=20240710224117">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240710224117"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240710224117"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20240716190015">
+    <link rel="stylesheet" href="files/iconsfont.css?_v=20240716190015">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240716190015"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?_v=20240716190015"></script>
     <title>Новий вантаж</title>
 </head>
 <body>
@@ -61,6 +61,7 @@
                         <span class="error-message"></span>
                     </div>
 
+                    <div class="input">
                         <div class="input__wrapper">
                             <p class="input__icon __icon-weight"></p>
                             <div class="input__inner">
@@ -68,113 +69,145 @@
                                 <input type="number" name="weight" id="weight" class="input__input">
                             </div>
                         </div>
+                        <span class="error-message"></span>
+                    </div>    
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-map"></p>
-                        <div class="input__inner">
-                            <label for="loadRegion" class="input__label">Оберіть область завантаження</label>
-                            <select name="loadRegion" id="loadRegion" class="create__select">
-                                <option value="Полтавська область" hidden selected class="create__option"></option>
-                                <option value="Полтавська область" class="create__option">Полтавська область</option>
-                                <option value="Полтавська область" class="create__option">Миколаївська область</option>
-                                <option value="Полтавська область" class="create__option">Київська область</option>
-                            </select>
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-map"></p>
+                            <div class="input__inner">
+                                <label for="loadRegion" class="input__label">Оберіть область завантаження</label>
+                                <select name="loadRegion" id="loadRegion" class="create__select">
+                                    <option value="Полтавська область" hidden selected class="create__option"></option>
+                                    <option value="Полтавська область" class="create__option">Полтавська область</option>
+                                    <option value="Полтавська область" class="create__option">Миколаївська область</option>
+                                    <option value="Полтавська область" class="create__option">Київська область</option>
+                                </select>
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-map"></p>
-                        <div class="input__inner">
-                            <label for="loadCity" class="input__label">Оберіть місто завантаження</label>
-                            <select name="loadCity" id="loadCity" class="create__select">
-                                <option value="Полтавська область" hidden selected class="create__option"></option>
-                                <option value="Полтавська область" class="create__option">Полтава</option>
-                                <option value="Полтавська область" class="create__option">Миколаїв</option>
-                                <option value="Полтавська область" class="create__option">Київ</option>
-                            </select>
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-map"></p>
+                            <div class="input__inner">
+                                <label for="loadCity" class="input__label">Оберіть місто завантаження</label>
+                                <select name="loadCity" id="loadCity" class="create__select">
+                                    <option value="Полтавська область" hidden selected class="create__option"></option>
+                                    <option value="Полтавська область" class="create__option">Полтава</option>
+                                    <option value="Полтавська область" class="create__option">Миколаїв</option>
+                                    <option value="Полтавська область" class="create__option">Київ</option>
+                                </select>
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-date-edit"></p>
-                        <div class="input__inner">
-                            <label for="loadDate" class="input__label">Оберіть дату завантаження</label>
-                            <input type="date" name="loadDate" id="loadDate" class="input__input">
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-date-edit"></p>
+                            <div class="input__inner">
+                                <label for="loadDate" class="input__label">Оберіть дату завантаження</label>
+                                <input type="date" name="loadDate" id="loadDate" class="input__input">
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-map"></p>
-                        <div class="input__inner">
-                            <label for="unloadRegion" class="input__label">Оберіть область розвантаження</label>
-                            <select name="unloadRegion" id="unloadRegion" class="create__select">
-                                <option value="Полтавська область" hidden selected class="create__option"></option>
-                                <option value="Полтавська область" class="create__option">Полтавська область</option>
-                                <option value="Полтавська область" class="create__option">Миколаївська область</option>
-                                <option value="Полтавська область" class="create__option">Київська область</option>
-                            </select>
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-map"></p>
+                            <div class="input__inner">
+                                <label for="unloadRegion" class="input__label">Оберіть область розвантаження</label>
+                                <select name="unloadRegion" id="unloadRegion" class="create__select">
+                                    <option value="Полтавська область" hidden selected class="create__option"></option>
+                                    <option value="Полтавська область" class="create__option">Полтавська область</option>
+                                    <option value="Полтавська область" class="create__option">Миколаївська область</option>
+                                    <option value="Полтавська область" class="create__option">Київська область</option>
+                                </select>
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-map"></p>
-                        <div class="input__inner">
-                            <label for="unloadCity" class="input__label">Оберіть місто розвантаження</label>
-                            <select name="unloadCity" id="unloadCity" class="create__select">
-                                <option value="Полтавська область" hidden selected class="create__option"></option>
-                                <option value="Полтавська область" class="create__option">Полтава</option>
-                                <option value="Полтавська область" class="create__option">Миколаїв</option>
-                                <option value="Полтавська область" class="create__option">Київ</option>
-                            </select>
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-map"></p>
+                            <div class="input__inner">
+                                <label for="unloadCity" class="input__label">Оберіть місто розвантаження</label>
+                                <select name="unloadCity" id="unloadCity" class="create__select">
+                                    <option value="Полтавська область" hidden selected class="create__option"></option>
+                                    <option value="Полтавська область" class="create__option">Полтава</option>
+                                    <option value="Полтавська область" class="create__option">Миколаїв</option>
+                                    <option value="Полтавська область" class="create__option">Київ</option>
+                                </select>
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-date-edit"></p>
-                        <div class="input__inner">
-                            <label for="unloadDate" class="input__label">Оберіть дату розвантаження</label>
-                            <input type="number" name="unloadDate" id="unloadDate" class="input__input">
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-date-edit"></p>
+                            <div class="input__inner">
+                                <label for="unloadDate" class="input__label">Оберіть дату розвантаження</label>
+                                <input type="number" name="unloadDate" id="unloadDate" class="input__input">
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-truck"></p>
-                        <div class="input__inner">
-                            <label for="bodyType" class="input__label">Оберіть тип кузову</label>
-                            <select name="bodyType" id="bodyType" class="create__select">
-                                <option value="" hidden selected class="create__option"></option>
-                                <option value="" class="create__option">Тентований</option>
-                                <option value="" class="create__option">Тягач</option>
-                                <option value="" class="create__option">Автовоз</option>
-                            </select>
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-truck"></p>
+                            <div class="input__inner">
+                                <label for="bodyType" class="input__label">Оберіть тип кузову</label>
+                                <select name="bodyType" id="bodyType" class="create__select">
+                                    <option value="" hidden selected class="create__option"></option>
+                                    <option value="" class="create__option">Тентований</option>
+                                    <option value="" class="create__option">Тягач</option>
+                                    <option value="" class="create__option">Автовоз</option>
+                                </select>
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-price-edit"></p>
-                        <div class="input__inner">
-                            <label for="price" class="input__label">Введіть ціну перевезення, грн</label>
-                            <input type="text" name="price" id="price" class="input__input">
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-price-edit"></p>
+                            <div class="input__inner">
+                                <label for="price" class="input__label">Введіть ціну перевезення, грн</label>
+                                <input type="text" name="price" id="price" class="input__input">
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-money"></p>
-                        <div class="input__inner">
-                            <label for="payType" class="input__label">Оберіть тип оплати</label>
-                            <select name="payType" id="payType" class="create__select">
-                                <option value="" hidden selected class="create__option"></option>
-                                <option value="" class="create__option">Готівка</option>
-                            </select>
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-money"></p>
+                            <div class="input__inner">
+                                <label for="payType" class="input__label">Оберіть тип оплати</label>
+                                <select name="payType" id="payType" class="create__select">
+                                    <option value="" hidden selected class="create__option"></option>
+                                    <option value="" class="create__option">Готівка</option>
+                                </select>
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
-                    <div class="input__wrapper">
-                        <p class="input__icon __icon-point"></p>
-                        <div class="input__inner">
-                            <label for="distance" class="input__label">Введіть відстань перевезення, км</label>
-                            <input type="number" name="distance" id="distance" class="input__input">
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <p class="input__icon __icon-point"></p>
+                            <div class="input__inner">
+                                <label for="distance" class="input__label">Введіть відстань перевезення, км</label>
+                                <input type="number" name="distance" id="distance" class="input__input">
+                            </div>
                         </div>
+                        <span class="error-message"></span>
                     </div>
 
                     <div class="input input__wrapper--textarea">
@@ -229,6 +262,6 @@
     </div>
 </footer>  
 </div>
-<script src="js/app.min.js?_v=20240710224117"></script>  
+<script src="js/app.min.js?_v=20240716190015"></script>  
 </body>
 </html>
