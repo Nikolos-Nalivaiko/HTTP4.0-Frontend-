@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.__icon-home:before {
+  content: "\e906";
+}
+.__icon-menu:before {
+  content: "\e913";
+}
 .__icon-star-line:before {
   content: "\e900";
 }
