@@ -67,7 +67,7 @@
                     </li>
                     <li class="navbar-mobile__item"><p class="__icon-truck navbar-mobile__item--main">Транспорт</p>
                         <ul class="navbar-mobile__submenu">
-                            <li class="navbar-mobile__subitem"><a href="car.html">Біржа транспорту</a></li>
+                            <li class="navbar-mobile__subitem"><a href="cars.html">Біржа транспорту</a></li>
                             <li class="navbar-mobile__subitem"><a href="create-car.html">Додати транспорт</a></li>
                         </ul>
                     </li>
@@ -120,7 +120,7 @@
                     </swiper-slide>
                 </swiper-container>
 
-                <swiper-container class="car__slider-submain" slides-per-view="2" direction="vertical" space-between="25">
+                <swiper-container class="car__slider-submain" init="false">
                     <swiper-slide class="car__slider-submain-thumb">
                         <img src="img/car1.jpg" alt="" class="car__slider-submain-slide">
                     </swiper-slide>
@@ -260,9 +260,9 @@
                     </div>
                 </div> 
                 
-                <swiper-container class="reviews__slider" slides-per-view="2" space-between="45" speed="750"
+                <swiper-container class="reviews__slider"
                 navigation-next-el=".reviews__next"
-                navigation-prev-el=".reviews__prev">
+                navigation-prev-el=".reviews__prev" init="false" direction="vertical">
                     <swiper-slide>
                         <div class="reviews__block">
                             <div class="reviews__block-header">
